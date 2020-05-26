@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class ImageHelper {
-  private readonly BASE_IMAGE_PATH: string = 'https://raw.githubusercontent.com/cjdowner/cryptocurrency-icons/master/32/icon/';
+  private readonly BASE_IMAGE_PATH: string = 'https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32/icon/';
   private readonly DEFAULT_EXTENSION: string = 'png';
 
   constructor() {}
