@@ -22,7 +22,7 @@ export class Api {
     }
 
     const headers = new HttpHeaders(
-      {'X-CMC_PRO_API_KEY': 'c3d576b3-0131-4ce7-809c-c8bdfee02634', 'Content-Type': 'application/x-www-form-urlencoded'}
+      {'X-CMC_PRO_API_KEY': 'Your_Api_Key', 'Content-Type': 'application/x-www-form-urlencoded'}
     );
 
     return this.http.get(apiUrl + endpoint, { headers: headers, params: reqOpts.params } );
