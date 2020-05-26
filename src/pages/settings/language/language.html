@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{ 'TITLE_LANGUAGE' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <list-settings [exec]="{fctToExectute:changeLanguage, thisParent: this, keyDB:'language'}" [dataSetting]='languages'></list-settings>
+</ion-content>

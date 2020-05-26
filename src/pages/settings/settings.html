@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{ 'TITLE_SETTINGS' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>{{ 'TITLE_DARK_MODE' | translate }}</ion-label>
+      <ion-toggle [(ngModel)]="isDark" (ionChange)="toggleAppTheme()"></ion-toggle>
+    </ion-item>
+    <button ion-item (click)="navigate('LanguagePage')">{{ 'TITLE_LANGUAGE' | translate }}</button>
+    <button ion-item (click)="navigate('CurrencyPage')">{{ 'TITLE_CURRENCY' | translate }}</button>
+  </ion-list>
+</ion-content>

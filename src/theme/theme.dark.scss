@@ -1,0 +1,35 @@
+.dark-theme {
+  ion-content {
+    background-color: $dark-bg;
+    color: #fff;
+  }
+
+  .toolbar-title {
+    color: #fff;
+  }
+
+  .bar-button-default {
+    color: #fff;
+  }
+
+  .item {
+    background-color: $dark-bg;
+  }
+
+  .label {
+    color: #fff;
+  }
+
+  .header .toolbar-background {
+    border-color: #ffffff;
+    background-color: $dark-bg;
+  }
+
+  .refresher-refreshing-text {
+    color: #fff;
+  }
+
+  ion-spinner * {
+    fill: #fff !important;
+  }
+}

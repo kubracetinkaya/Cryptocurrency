@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Cryptocurrency</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar [(ngModel)]="searchText" [showCancelButton]="shouldShowCancel" (ionInput)="onInputSearch($event)" (ionCancel)="onCancel($event)">
+  </ion-searchbar>
+  <ion-refresher (ionRefresh)="loadCoin($event)">
+    <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="Pull to refresh" refreshingSpinner="circles" refreshingText="Refreshing...">
+    </ion-refresher-content>
+  </ion-refresher>
+  <ion-list [virtualScroll]="coinListFiltered">
+    <ion-grid class='coin-card' *virtualItem="let coin">
+      <coin-card [coinData]='coin'></coin-card>
+    </ion-grid>
+  </ion-list>
+</ion-content>
